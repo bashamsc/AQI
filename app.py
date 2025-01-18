@@ -4,7 +4,7 @@ import pickle
 
 app=Flask(__name__)
 
-model = pickle.load(open('rfc_aqi.pkl', 'rb'))
+model = pickle.load(open('lasso_regression_model.pkl', 'rb'))
 
 @app.route('/')
 def home():
