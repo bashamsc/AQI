@@ -1,10 +1,11 @@
 from flask import Flask
 from flask import request,render_template,url_for
-import pickle
+import joblib
 
 app=Flask(__name__)
 
-model = pickle.load(open('lasso_regression_model.pkl', 'rb'))
+#model = pickle.load(open('lasso_regression_model.pkl', 'rb'))
+model = joblib.load('rfc_aqi.joblib')
 
 @app.route('/')
 def home():
