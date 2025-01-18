@@ -1,10 +1,4 @@
-setuptools 
-six
-Flask
-gunicorn
-joblib
-numpy
+flask
+pandas
 scikit-learn
-scipy
-sklearn
-Werkzeug
+gunicorn
